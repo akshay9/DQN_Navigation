@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Unity Runtime
+Banana_Windows_x86_64/
