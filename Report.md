@@ -70,7 +70,7 @@ The Implementation uses a Fully Connected Neural Network containing following la
 2. 2 Dense Layers with 256 neurons each with ReLu activation function.
 3. 1 Dense Layer with neurons equal to number of actions .
 
-#### Final Algorithm {#algorithm}
+#### Final Algorithm
 ```
 initialize replay memory D
 initialize action-value function q̂ with random weights w
@@ -104,7 +104,7 @@ When updating the model, the local model is trained using the mini-batch while t
 The code is seperated into 3 files:
 
 * `model.py` file contains the 3 layer Neural Network model written in PyTorch Framework.
-* `dqn_agent.py` contains the implementation of [Deep Q-Learning algorithm](#algorithm) along with experience replay as described above. 
+* `dqn_agent.py` contains the implementation of [Deep Q-Learning algorithm](#final-algorithm) along with experience replay as described above. 
   * The replay memory is implemented as a circular queue in `ReplayBuffer` class.  
   * The Agent is implemented as `Agent` class containing the following methods : 
     * `step()` : This method saves the agent's experience for the current time step into the replay memory and also descides if agent has gathered enough new experience to train the models.
